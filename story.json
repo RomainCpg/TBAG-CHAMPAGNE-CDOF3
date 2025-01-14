@@ -1,0 +1,41 @@
+{
+
+  "starting":
+
+    {
+
+      "lines": [
+        "You wake up alone in the middle of your prison cell. You don't know why you are here...",
+        "And you don't even know what your name is... Suddenly, you hear some keys sound and... ",
+        "\"Hey Theodore, how are you ? First day with us ! Here your meal... \""
+      ],
+
+      "choices": [
+        ["1 - You are too lost to talk to the guard and you close your eyes without eating", "eat_death"],
+        ["2 - You say thanks you and you accept your meal.", "destination"],
+        ["3 - You respond to the guard...", "destination"]
+      ]
+
+    },
+
+  "eat_death": {
+
+    "lines": [
+      "You die from not eating..."
+    ],
+
+    "choices": [
+      ["1 - Restart ? ","starting"],
+      ["2 - Quit ? ",""]
+
+    ]
+
+  }
+
+
+
+
+
+
+
+}
