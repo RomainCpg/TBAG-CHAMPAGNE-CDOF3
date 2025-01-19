@@ -26,8 +26,14 @@ def read_and_get_choices(story_step_name: str) -> int:
 
         choice_value = int(input("What's your choice ? "))
 
-        while choice_value <1 or choice_value > len(choices_to_print):
+        while choice_value < 1 or choice_value > len(choices_to_print):
             choice_value = int(input("Invalid choice number, please, make another one... "))
 
-        return choices_to_print[choice_value-1][1]
+        next_step = choices_to_print[choice_value - 1][1]
+
+        if next_step == "":
+            print("Goodbye!")
+            exit()
+
+        return next_step
 
